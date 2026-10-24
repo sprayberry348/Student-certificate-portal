@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 28px 16px; background: #f1f5f9; color: #172033;
+  font: 16px/1.5 system-ui, sans-serif;
+}
+.panel {
+  max-width: 720px; margin: auto; background: white; padding: 28px;
+  border-radius: 16px; box-shadow: 0 10px 30px #0f172a12;
+}
+.eyebrow, .cert-small { letter-spacing: .12em; font-size: .75rem; }
+.eyebrow { color: #2563eb; font-weight: 800; }
+.warning { padding: 12px; background: #fff1f2; color: #9f1239; border-radius: 8px; }
+label { display: block; margin: 16px 0 6px; font-weight: 650; }
+input {
+  width: 100%; padding: 12px; border: 1px solid #cbd5e1;
+  border-radius: 8px; font: inherit;
+}
+.hint { color: #64748b; font-size: .85rem; margin-top: 4px; }
+button {
+  margin-top: 18px; width: 100%; border: 0; border-radius: 8px;
+  padding: 13px; background: #1d4ed8; color: white; font: inherit; font-weight: 700;
+  cursor: pointer;
+}
+#status { margin: 16px 0; }
+.certificate {
+  margin-top: 24px; padding: 30px 20px; text-align: center;
+  border: 6px double #b08d39; background: #fffdf6;
+}
+.certificate h2 { font-size: 2rem; }
+.certificate h3 { font-size: 1.8rem; color: #1d4ed8; }
+.certificate h4 { font-size: 1.2rem; }
+.stamp { color: #9f1239; font-weight: 800; letter-spacing: .15em; }
+.hidden { display: none; }

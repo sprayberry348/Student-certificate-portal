@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Certificate Portal — Vulnerable Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="panel">
+    <p class="eyebrow">TRAINING DEMO</p>
+    <h1>Student Portal</h1>
+    <p class="warning">Vulnerable example — do not use this pattern in a real portal.</p>
+
+    <form id="certificateForm">
+      <label for="studentId">Student ID</label>
+      <input id="studentId" value="STU001" required>
+
+      <label for="name">Name to print on certificate</label>
+      <input id="name" value="Ada Okafor" required>
+      <p class="hint">This field should not be trusted by the backend.</p>
+
+      <button type="submit">Generate certificate</button>
+    </form>
+
+    <div id="status" role="status"></div>
+    <section id="certificate" class="certificate hidden">
+      <p class="cert-small">CERTIFICATE OF COMPLETION</p>
+      <h2>Certificate</h2>
+      <p>This is to certify that</p>
+      <h3 id="certName"></h3>
+      <p>has completed the programme</p>
+      <h4 id="certProgramme"></h4>
+      <p id="certId" class="cert-small"></p>
+      <p class="stamp">DEMO COPY</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

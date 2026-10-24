@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Certificate Portal — Secure Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="panel">
+    <p class="eyebrow">SECURE TRAINING DEMO</p>
+    <h1>Student Portal</h1>
+    <p class="intro">Log in with your student account. The portal uses your registered name and checks completion on the server.</p>
+
+    <form id="loginForm">
+      <label for="studentId">Student ID</label>
+      <input id="studentId" autocomplete="username" value="STU001" required>
+
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="current-password" value="demo123" required>
+      <button type="submit">Log in</button>
+    </form>
+
+    <section id="studentPanel" class="hidden">
+      <div class="student-info">
+        <h2>Your record</h2>
+        <p><strong>Student ID:</strong> <span id="profileId"></span></p>
+        <p><strong>Registered name:</strong> <span id="profileName"></span></p>
+        <p><strong>Programme:</strong> <span id="profileProgramme"></span></p>
+        <p><strong>Completion:</strong> <span id="profileStatus"></span></p>
+      </div>
+      <button id="generateButton" type="button">Generate my certificate</button>
+      <button id="logoutButton" type="button" class="secondary">Log out</button>
+    </section>
+
+    <div id="status" role="status" aria-live="polite"></div>
+    <section id="certificate" class="certificate hidden">
+      <p class="cert-small">CERTIFICATE OF COMPLETION</p>
+      <h2>Certificate</h2>
+      <p>This is to certify that</p>
+      <h3 id="certName"></h3>
+      <p>has completed the programme</p>
+      <h4 id="certProgramme"></h4>
+      <p id="certId" class="cert-small"></p>
+      <p class="stamp">DEMO COPY</p>
+    </section>
+
+    <p class="hint">Demo accounts: STU001 / demo123 (completed), STU002 / demo123 (not completed).</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
